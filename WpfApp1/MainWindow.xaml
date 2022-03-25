@@ -1,0 +1,18 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Dog Fetcher" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/background.png"/>
+        </Grid.Background>
+        <Label x:Name="lblDogBreed" Content="" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" FontSize="36" Width="238"/>
+        <Button Content="Get a dog" HorizontalAlignment="Center" Margin="0,364,0,20" VerticalAlignment="Bottom" Click="Button_Click" Height="38" Width="142" Background="#FFFFEEEE" Foreground="#FF565656" FontSize="18"/>
+        <Image x:Name="dogImage" Margin="150,67,150,0" VerticalAlignment="Top"  Stretch="UniformToFill" RenderTransformOrigin="0.498,0.503" Width="500" Height="300"/>
+
+    </Grid>
+</Window>
